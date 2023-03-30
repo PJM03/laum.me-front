@@ -13,7 +13,6 @@ export default function Index() {
     const func = async () => {
       const res = await fetch(`https://api.laum.me/front/stack`);
       const data = await res.json();
-      console.log(data);
       setStacks(data);
     };
     func();
@@ -80,12 +79,10 @@ export default function Index() {
             <hr className="my-3" />
             <div className="pl-3">
               <div className="text-sm">
-                {/* {hello} */}
-                {/* {hello} */}
                 {stacks.map((stack) => {
                   return (
                     <img
-                      key={stack}
+                      key={stack.id}
                       className="inline"
                       src={`https://img.shields.io/badge/${stack.name}-${
                         stack.hexColor
