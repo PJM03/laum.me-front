@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nm-card {
+  width: 54rem;
+  height: 30rem;
+}
+
+.md-card {
+  width: 18rem;
+  height: 10rem;
+}
