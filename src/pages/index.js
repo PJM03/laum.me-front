@@ -85,6 +85,7 @@ export default function Index() {
                 {stacks.map((stack) => {
                   return (
                     <img
+                      key={stack}
                       className="inline"
                       src={`https://img.shields.io/badge/${stack.name}-${
                         stack.hexColor
